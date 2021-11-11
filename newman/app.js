@@ -17,7 +17,7 @@ newman.run({
             title: "Reporte Servicios API",
             // titleSize: 4,
             // omitHeaders: true,
-            // skipHeaders: "Authorization",
+            skipHeaders: "Authorization,AuthorizationESB",
             // omitRequestBodies: true,
             // omitResponseBodies: true,
             // hideRequestBody: ["Login"],
