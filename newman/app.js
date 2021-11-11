@@ -2,12 +2,12 @@ const newman = require('newman'); // require newman in your project
 
 // call newman.run to pass `options` object and wait for callback
 newman.run({
-    collection: './API.postman_collection.json',
+    collection: './newman/API.postman_collection.json',
     reporters: ['htmlextra'],
     iterationCount: 1,
     reporter: {
         htmlextra: {
-            export: '../index.html',
+            export: './index.html',
             // template: './template.hbs'
             // logs: true,
             // showOnlyFails: true,
