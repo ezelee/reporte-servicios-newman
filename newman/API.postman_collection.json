@@ -55,7 +55,7 @@
 					}
 				],
 				"url": {
-					"raw": "https://portalintermediarios-pre-api.gruposancorseguros.com/api/v2/branches?branchCode=100,200,300",
+					"raw": "https://portalintermediarios-pre-api.gruposancorseguros.com/api/v2/branches?branchCode=200",
 					"protocol": "https",
 					"host": [
 						"portalintermediarios-pre-api",
@@ -70,7 +70,7 @@
 					"query": [
 						{
 							"key": "branchCode",
-							"value": "100,200,300"
+							"value": "200"
 						}
 					]
 				},
@@ -470,7 +470,7 @@
 					}
 				],
 				"url": {
-					"raw": "https://portalintermediarios-pre-api.gruposancorseguros.com/api/v2/contractart/affiliationcontracts?producerCode=101331",
+					"raw": "https://portalintermediarios-pre-api.gruposancorseguros.com/api/v2/contractart/affiliationcontracts?producerCode=101331&inputParameter=30601358502",
 					"protocol": "https",
 					"host": [
 						"portalintermediarios-pre-api",
@@ -487,6 +487,10 @@
 						{
 							"key": "producerCode",
 							"value": "101331"
+						},
+						{
+							"key": "inputParameter",
+							"value": "30601358502"
 						}
 					]
 				},
@@ -557,6 +561,13 @@
 						"damaged",
 						"injured",
 						"relation"
+					],
+					"query": [
+						{
+							"key": "branchCode",
+							"value": "100",
+							"disabled": true
+						}
 					]
 				},
 				"description": "HU [https://signe.gruposancorseguros.com/browse/PI-13182](https://signe.gruposancorseguros.com/browse/PI-13182)"
@@ -564,7 +575,7 @@
 			"response": []
 		},
 		{
-			"name": "document/types/ Get Information Types",
+			"name": "document/types",
 			"event": [
 				{
 					"listen": "test",
@@ -1622,7 +1633,7 @@
 					}
 				],
 				"url": {
-					"raw": "https://portalintermediarios-pre-api.gruposancorseguros.com/api/v2/vehiclepc/brands",
+					"raw": "https://portalintermediarios-pre-api.gruposancorseguros.com/api/v2/vehiclepc/brands?brandName=TOYOTA",
 					"protocol": "https",
 					"host": [
 						"portalintermediarios-pre-api",
@@ -1634,6 +1645,12 @@
 						"v2",
 						"vehiclepc",
 						"brands"
+					],
+					"query": [
+						{
+							"key": "brandName",
+							"value": "TOYOTA"
+						}
 					]
 				},
 				"description": "HU [https://signe.gruposancorseguros.com/browse/PI-12751](https://signe.gruposancorseguros.com/browse/PI-12751)"
@@ -1690,7 +1707,7 @@
 					}
 				],
 				"url": {
-					"raw": "https://portalintermediarios-pre-api.gruposancorseguros.com/api/v2/vehicles/classes",
+					"raw": "https://portalintermediarios-pre-api.gruposancorseguros.com/api/v2/vehicles/classes?vehicleTypeCode=pick_up_GSS",
 					"protocol": "https",
 					"host": [
 						"portalintermediarios-pre-api",
@@ -1702,6 +1719,12 @@
 						"v2",
 						"vehicles",
 						"classes"
+					],
+					"query": [
+						{
+							"key": "vehicleTypeCode",
+							"value": "pick_up_GSS"
+						}
 					]
 				},
 				"description": "HU [https://signe.gruposancorseguros.com/browse/PI-2175](https://signe.gruposancorseguros.com/browse/PI-2175)"
@@ -1758,7 +1781,7 @@
 					}
 				],
 				"url": {
-					"raw": "https://portalintermediarios-pre-api.gruposancorseguros.com/api/v2/vehicles/models?brandCode=8",
+					"raw": "https://portalintermediarios-pre-api.gruposancorseguros.com/api/v2/vehicles/models?brandCode=71",
 					"protocol": "https",
 					"host": [
 						"portalintermediarios-pre-api",
@@ -1774,7 +1797,7 @@
 					"query": [
 						{
 							"key": "brandCode",
-							"value": "8"
+							"value": "71"
 						}
 					]
 				},
@@ -2362,11 +2385,6 @@
 							"pm.test(\"vehiclepc/vehicleinfobylicenseplate\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
-							"\r",
-							"pm.test(\"vehiclepc/vehicleinfobylicenseplate format valid\", function () {\r",
-							"    var jsonData = pm.response.json();\r",
-							"    pm.expect(jsonData.messages[0].code).to.not.eql(\"PORT-2-400-32603\");\r",
-							"});\r",
 							""
 						],
 						"type": "text/javascript"
@@ -2420,11 +2438,6 @@
 						{
 							"key": "licensePlate",
 							"value": "WEQ998"
-						},
-						{
-							"key": "qw",
-							"value": null,
-							"disabled": true
 						}
 					]
 				},
