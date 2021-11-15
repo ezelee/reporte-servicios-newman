@@ -2,7 +2,7 @@ const newman = require('newman'); // require newman in your project
 
 // call newman.run to pass `options` object and wait for callback
 newman.run({
-    collection: 'https://www.getpostman.com/collections/dfc032a265fdf9078f23?apikey=PMAK-61925100a2e71900511eaf3b-feb2ac2b1a9097064dd71ccf2462303e64',
+    collection: './newman/API.postman_collection.json',
     reporters: ['htmlextra'],
     iterationCount: 1,
     reporter: {
