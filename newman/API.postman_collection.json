@@ -359,9 +359,9 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"//pm.test(\"Status code is 200\", function () {\r",
-							"//    pm.response.to.have.status(200);\r",
-							"//});"
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
 						],
 						"type": "text/javascript"
 					}
@@ -370,11 +370,6 @@
 			"request": {
 				"method": "GET",
 				"header": [
-					{
-						"key": "accept",
-						"value": "application/json",
-						"type": "text"
-					},
 					{
 						"key": "applicationId",
 						"value": "14",
@@ -387,7 +382,7 @@
 					},
 					{
 						"key": "clientTypeId",
-						"value": "1",
+						"value": "3",
 						"type": "text"
 					},
 					{
@@ -397,7 +392,7 @@
 					},
 					{
 						"key": "AuthorizationESB",
-						"value": "eyJ1c2VyTmFtZSI6IjI4OTM3IiwiYnVwSWQiOjEyOTA0MDc5fQ==",
+						"value": "eyJ1c2VyTmFtZSI6IjI4OTQxIiwiYnVwSWQiOiIxMjkwNDA3OSJ9",
 						"type": "text"
 					}
 				],
