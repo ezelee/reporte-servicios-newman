@@ -1,6 +1,6 @@
 require('dotenv').config({path: __dirname + '/.env'})
-const apiToken = process.env['API_TOKEN'];
-//const apiToken = '';
+//const apiToken = process.env['API_TOKEN'];
+const apiToken = '';
 const newman = require('newman'); // require newman in your project
 
 var postmanCollection = '';
