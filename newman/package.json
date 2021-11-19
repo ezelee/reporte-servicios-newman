@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/ezelee/newman-report#readme",
   "dependencies": {
+    "dotenv": "^10.0.0",
     "newman": "^5.3.0",
     "newman-reporter-htmlextra": "^1.22.3"
   }
