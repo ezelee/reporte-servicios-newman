@@ -17,7 +17,7 @@ newman.run({
     iterationCount: 1,
     reporter: {
         htmlextra: {
-            export: './index.html',
+            export: './pint.html',
             // template: './template.hbs'
             // logs: true,
             // showOnlyFails: true,
@@ -27,7 +27,7 @@ newman.run({
             title: "Reporte Servicios API",
             // titleSize: 4,
             // omitHeaders: true,
-            skipHeaders: "Authorization,AuthorizationESB",
+            skipHeaders: "Authorization,AuthorizationESB,AuthorizationInfo",
             // omitRequestBodies: true,
             // omitResponseBodies: true,
             // hideRequestBody: ["Login"],
