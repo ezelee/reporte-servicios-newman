@@ -50,40 +50,40 @@ newman.run({
 });
 
 //test
-newman.run({
-    collection: postmanCollectionTest,
-    reporters: ['htmlextra'],
-    iterationCount: 1,
-    reporter: {
-        htmlextra: {
-            export: './test.html',
-            // template: './template.hbs'
-            // logs: true,
-            // showOnlyFails: true,
-            // noSyntaxHighlighting: true,
-            // testPaging: true,
-            browserTitle: "Reporte Servicios",
-            title: "Reporte Servicios - Test",
-            // titleSize: 4,
-            // omitHeaders: true,
-            skipHeaders: "Authorization,AuthorizationESB,AuthorizationInfo",
-            // omitRequestBodies: true,
-            // omitResponseBodies: true,
-            // hideRequestBody: ["Login"],
-            // hideResponseBody: ["Auth Request"],
-            // showEnvironmentData: true,
-            // skipEnvironmentVars: ["API_KEY"],
-            // showGlobalData: true,
-            // skipGlobalVars: ["API_TOKEN"],
-            // skipSensitiveData: true,
-            // showMarkdownLinks: true,
-            // showFolderDescription: true,
-            timezone: "America/Argentina/Buenos_Aires",
-            // skipFolders: "folder name with space,folderWithoutSpace",
-            // skipRequests: "request name with space,requestNameWithoutSpace"
-        }
-    }
-}, function (err) {
-	if (err) { throw err; }
-    console.log('collection run complete!');
-});
+// newman.run({
+//     collection: postmanCollectionTest,
+//     reporters: ['htmlextra'],
+//     iterationCount: 1,
+//     reporter: {
+//         htmlextra: {
+//             export: './test.html',
+//             // template: './template.hbs'
+//             // logs: true,
+//             // showOnlyFails: true,
+//             // noSyntaxHighlighting: true,
+//             // testPaging: true,
+//             browserTitle: "Reporte Servicios",
+//             title: "Reporte Servicios - Test",
+//             // titleSize: 4,
+//             // omitHeaders: true,
+//             skipHeaders: "Authorization,AuthorizationESB,AuthorizationInfo",
+//             // omitRequestBodies: true,
+//             // omitResponseBodies: true,
+//             // hideRequestBody: ["Login"],
+//             // hideResponseBody: ["Auth Request"],
+//             // showEnvironmentData: true,
+//             // skipEnvironmentVars: ["API_KEY"],
+//             // showGlobalData: true,
+//             // skipGlobalVars: ["API_TOKEN"],
+//             // skipSensitiveData: true,
+//             // showMarkdownLinks: true,
+//             // showFolderDescription: true,
+//             timezone: "America/Argentina/Buenos_Aires",
+//             // skipFolders: "folder name with space,folderWithoutSpace",
+//             // skipRequests: "request name with space,requestNameWithoutSpace"
+//         }
+//     }
+// }, function (err) {
+// 	if (err) { throw err; }
+//     console.log('collection run complete!');
+// });
