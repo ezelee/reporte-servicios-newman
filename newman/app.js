@@ -6,7 +6,9 @@ const newman = require('newman'); // require newman in your project
 var postmanCollection = '';
 var postmanCollectionTest = '';
 if (apiToken) {
-	postmanCollection = 'https://api.getpostman.com/collections/10402387-5398570a-ba98-4a4d-97f9-d5695e4d85e2?apikey=' + apiToken;
+	postmanCollection = 'https://www.postman.com/collections/027ad277459961a84c65';
+    //postmanCollection = 'https://api.getpostman.com/collections/10402387-5398570a-ba98-4a4d-97f9-d5695e4d85e2?apikey=' + apiToken;
+
     postmanCollectionTest = 'https://api.getpostman.com/collections/10402387-65df4021-7b80-4f79-9259-b7b56542770d?apikey=' + apiToken;
 }
 
