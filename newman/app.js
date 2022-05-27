@@ -6,15 +6,15 @@ const newman = require('newman'); // require newman in your project
 var postmanCollection = '';
 var postmanCollectionTest = '';
 if (apiToken) {
-	postmanCollection = 'https://www.postman.com/collections/ae8a9914-cd0f-4b3e-ac34-34b3391e2855';
+	//postmanCollection = 'https://www.postman.com/collections/ae8a9914-cd0f-4b3e-ac34-34b3391e2855';
     //postmanCollection = 'https://api.getpostman.com/collections/10402387-5398570a-ba98-4a4d-97f9-d5695e4d85e2?apikey=' + apiToken;
 
-    postmanCollectionTest = 'https://api.getpostman.com/collections/10402387-65df4021-7b80-4f79-9259-b7b56542770d?apikey=' + apiToken;
+    postmanCollectionTest = 'https://api.getpostman.com/collections/ae8a9914-cd0f-4b3e-ac34-34b3391e2855?apikey=' + apiToken;
 }
 
 // call newman.run to pass `options` object and wait for callback
 newman.run({
-    collection: postmanCollection,
+    collection: postmanCollectionTest,
     reporters: ['htmlextra'],
     iterationCount: 1,
     reporter: {
